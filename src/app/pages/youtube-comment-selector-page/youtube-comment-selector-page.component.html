@@ -1,0 +1,16 @@
+<div class='module' id="youtube-comments-page">
+	<app-icon src='/assets/images/youtube.png' nextModule='dvd'></app-icon>
+	<div id="youtube-comments">
+		<select [(ngModel)]="selectedOption" (change)="getComments()">
+			<option *ngFor="let video of videos" [ngValue]="video.id.videoId">
+				{{ video.snippet.title | lowercase }}
+			</option>
+		</select>
+		<button (click)="refresh()">refresh</button>
+		<div *ngIf="comments">
+			<app-youtube-comment *ngFor="let comment of comments | slice:0:3; index as i" [commentData]="comment"
+				[index]="i+1">
+			</app-youtube-comment>
+		</div>
+	</div>
+</div>

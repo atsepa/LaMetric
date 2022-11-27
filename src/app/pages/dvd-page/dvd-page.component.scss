@@ -1,0 +1,64 @@
+
+.icon {
+  display: inline-block;
+  width: 150px;
+  height: 75px;
+  background-size: cover;
+}
+
+.icon-dvd {
+  	background-image: url('/assets/svg/dvd.svg');
+}
+
+.icon-dvd.green {
+	filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(100deg) brightness(104%) contrast(97%);
+}
+
+
+
+.box{
+  cursor: none;
+	width: 800px;
+ 	height: 480px;
+  	position: relative;
+	  overflow: hidden;
+}
+
+
+span{
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  -webkit-animation: moveX 3s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+  -moz-animation: moveX 3s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+  -o-animation: moveX 3s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+  animation: moveX 3s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes moveX {
+  from { left: 0; } to { left: 655px; }
+}
+@-moz-keyframes moveX {
+  from { left: 0; } to { left: 655px; }
+}
+@-o-keyframes moveX {
+  from { left: 0; } to { left: 655px; }
+}
+@keyframes moveX {
+  from { left: 0; } to { left: 655px; }
+}
+
+@-webkit-keyframes moveY {
+  from { top: 0; } to { top: 405px; }
+}
+@-moz-keyframes moveY {
+  from { top: 0; } to { top: 405px; }
+}
+@-o-keyframes moveY {
+  from { top: 0; } to { top: 405px; }
+}
+@keyframes moveY {
+  from { top: 0; } to { top: 405px; }
+}
+

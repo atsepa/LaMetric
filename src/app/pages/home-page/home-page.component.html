@@ -1,0 +1,9 @@
+<div>
+	<a routerLink="/clock">Clock</a> <br />
+	<a routerLink="/weather">Weather</a> <br />
+	<a routerLink="/youtube">Youtube</a> <br />
+	<a routerLink="/youtube-comments">Youtube Comments</a> <br />
+	<a routerLink="/dvd">DVD</a> <br />
+	<button (click)="openFullscreen()" *ngIf="!isFullScreen">Open Fullscreen</button>
+	<button (click)="closeFullscreen()" *ngIf="isFullScreen">Close Fullscreen</button>
+</div>

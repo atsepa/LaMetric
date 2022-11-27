@@ -1,0 +1,32 @@
+@font-face {
+  font-family: ChessType;
+  src: url(assets/font/ChessType.ttf) format("opentype");
+}
+
+body{
+	background-color: black;
+	color: white;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'ChessType', 'arial', sans-serif;
+}
+
+.module{
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	grid-template-columns: .5fr 2fr;
+
+	p {
+		font-size: 120px;
+        font-size: 14vw;
+	}
+
+	img {
+		width: 236px;
+	}
+}

@@ -1,0 +1,4 @@
+<div class='module' id="clock-page">
+	<app-icon src='/assets/images/clock.PNG' nextModule='weather'></app-icon>
+	<app-module-text [text]="$time | async | date: 'hh:mm a'"></app-module-text>
+</div>
